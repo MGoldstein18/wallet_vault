@@ -1,35 +1,27 @@
-## Getting Started
+## Wallet Vault
+A smart contract wallet with vaults for increased security
 
-Create a project using this example:
+-------------------------------------------------------------
 
-```bash
-npx thirdweb create --contract --template hardhat-javascript-starter
-```
+Contract published to the Polygon Mumbai Testnet using thirdweb release and be viewed [here](https://thirdweb.com/mumbai/0x4747bA0Da79fbec7B4d7949720d9629559C92984/)
 
-You can start editing the page by modifying `contracts/MyContract.sol`.
+-------------------------------------------------------------
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts SDK Docs](https://portal.thirdweb.com/thirdweb-deploy/contract-extensions) to learn more.
+### Functions
+#### `createVault`
+Create a new vault
 
-## Deploying Contracts
+#### `withdrawFromVault`
+Withdraw funds from vault to the main wallet balance
 
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
+#### `depositIntoVault`
+Deposit funds into a vault from the main wallet balance
 
-```bash
-npm run deploy
-# or
-yarn deploy
-```
+#### `lockVault`
+Lock a vault
 
-## Releasing Contracts
+#### `unlockVault`
+Unlock a vault
 
-If you want to release a version of your contracts publicly, you can use one of the followings command:
-
-```bash
-npm run release
-# or
-yarn release
-```
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+#### `sendNativeToken`
+Send funds out of the wallet
